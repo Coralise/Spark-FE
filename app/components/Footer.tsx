@@ -1,5 +1,6 @@
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -38,8 +39,8 @@ export default function Footer() {
                     © {new Date().getFullYear()} Name
                 </div>
                 <div className="flex gap-4">
-                    <a href="/privacy" className="text-sm text-neutral-500">Privacy Policy</a>
-                    <a href="/terms" className="text-sm text-neutral-500">Terms of Service</a>
+                    <Link href="/privacy" className="text-sm text-neutral-500">Privacy Policy</Link>
+                    <Link href="/terms" className="text-sm text-neutral-500">Terms of Service</Link>
                 </div>
             </section>
         </footer>

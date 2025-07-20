@@ -70,6 +70,40 @@ This project is optimized for deployment on Vercel:
 3. **Deploy** - Vercel will automatically build and deploy your site
 4. **Custom domain** (optional) - Add your custom domain in Vercel dashboard
 
-## 📝 License
+## � Development
+
+- Edit the main page in `app/page.tsx`
+- Modify components in `app/components/`
+- Update styles in `app/globals.css`
+- The page auto-updates as you edit files during development
+
+### Code Quality & Linting
+
+This project uses ESLint with Next.js specific rules for optimal performance and best practices:
+
+```bash
+npm run lint
+```
+
+**Common ESLint Issues & Solutions:**
+
+1. **Image Optimization Warning** - Replace `<img>` with `<Image />` from `next/image`:
+   ```tsx
+   import Image from 'next/image'
+   <Image src="/logo.png" alt="Logo" width={32} height={32} />
+   ```
+
+2. **Navigation Links Error** - Use `<Link />` from `next/link` for internal navigation:
+   ```tsx
+   import Link from 'next/link'
+   <Link href="/">Home</Link>
+   ```
+
+3. **External Links** - Keep `<a>` tags for external URLs with proper attributes:
+   ```tsx
+   <a href="https://external.com" target="_blank" rel="noopener noreferrer">
+   ```
+
+## �📝 License
 
 This project is created for demonstration purposes.
