@@ -61,25 +61,6 @@ npm start
 - **TypeScript** - Type-safe development experience
 - **Optimized Performance** - Built with Next.js for optimal loading speeds
 
-## 📁 Project Structure
-
-```
-spark-fe/
-├── app/
-│   ├── components/
-│   │   ├── Card.tsx          # Reusable card component
-│   │   ├── FeatureSection.tsx # Features display section
-│   │   ├── Footer.tsx         # Site footer
-│   │   └── Header.tsx         # Site header
-│   ├── globals.css           # Global styles and Tailwind imports
-│   ├── layout.tsx            # Root layout component
-│   └── page.tsx              # Main landing page
-├── public/
-│   ├── hero-bg.jpg          # Hero section background image
-│   └── logo.png             # Site logo
-└── [config files]          # Next.js, TypeScript, and Tailwind config
-```
-
 ## 🚀 Deployment on Vercel
 
 This project is optimized for deployment on Vercel:
@@ -88,20 +69,6 @@ This project is optimized for deployment on Vercel:
 2. **Configure project settings** (Vercel will auto-detect Next.js)
 3. **Deploy** - Vercel will automatically build and deploy your site
 4. **Custom domain** (optional) - Add your custom domain in Vercel dashboard
-
-### Vercel Deployment Benefits
-- Automatic deployments on git push
-- Global CDN for fast loading worldwide
-- Serverless functions support
-- Built-in analytics and performance monitoring
-- Zero-configuration setup for Next.js projects
-
-## 🔧 Development
-
-- Edit the main page in `app/page.tsx`
-- Modify components in `app/components/`
-- Update styles in `app/globals.css`
-- The page auto-updates as you edit files during development
 
 ## 📝 License
 
